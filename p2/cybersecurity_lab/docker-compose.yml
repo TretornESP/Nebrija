@@ -1,0 +1,105 @@
+version: '3.8'
+
+services:
+  # Gateway / Reverse Proxy & Landing Page
+  nginx:
+    image: nginx:alpine
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./landing_page/src:/usr/share/nginx/html:ro
+    ports:
+      - "80:80"
+      - "8001:8001"
+      - "8002:8002"
+      - "8003:8003"
+      - "8004:8004"
+      - "8005:8005"
+      - "8006:8006"
+    depends_on:
+      - xss_blog
+      - file_upload
+      - sqli_login
+      - ssti_flask
+      - xxe_rce
+      - xsstocsrf_profile
+    networks:
+      - lab_network
+
+  # XSS Challenge
+  xss_blog:
+    build: ./xss_blog
+    restart: always
+    environment:
+      - MYSQL_HOST=xss_db
+      - MYSQL_DB=xss_blog
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=root
+    depends_on:
+      - xss_db
+    networks:
+      - lab_network
+
+  xss_db:
+    image: mariadb:10.5
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=xss_blog
+    volumes:
+      - ./xss_blog/init.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - lab_network
+
+  # File Upload Challenge
+  file_upload:
+    build: ./file_upload
+    restart: always
+    networks:
+      - lab_network
+
+  # SQL Injection Challenge
+  sqli_login:
+    build: ./sqli_login
+    restart: always
+    environment:
+      - MYSQL_HOST=sqli_db
+      - MYSQL_DB=sqli_login
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=root
+    depends_on:
+      - sqli_db
+    networks:
+      - lab_network
+
+  sqli_db:
+    image: mariadb:10.5
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=sqli_login
+    volumes:
+      - ./sqli_login/init.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - lab_network
+
+  # SSTI Challenge (Python Flask)
+  ssti_flask:
+    build: ./ssti_flask
+    restart: always
+    networks:
+      - lab_network
+
+  # XXE to RCE Challenge (PHP + Expect)
+  xxe_rce:
+    build: ./xxe_rce
+    restart: always
+    networks:
+      - lab_network
+
+  # XSS to CSRF Challenge (PHP Profile)
+  xsstocsrf_profile:
+    build: ./xsstocsrf_profile
+    restart: always
+    networks:
+      - lab_network
+
+networks:
+  lab_network:
