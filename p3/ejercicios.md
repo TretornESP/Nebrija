@@ -140,8 +140,10 @@ detección cero, pero sí reducir mucho el número de detecciones) (tienes que d
 puedes utilizar la técnica de sustitución de descargas que vimos en la práctica 1 para forzar la descarga
 de un payload creado con msfvenom.
 
-5. Si tuvieses que hacer tu propio canal de comunicaciones para controlar máquinas infectadas, ¿Cómo podrías
+Nota: No tener éxito es, logré lanzar el ataque, pero la explotación falló porque no había ninguna vulnerabilidad
+
+6. Si tuvieses que hacer tu propio canal de comunicaciones para controlar máquinas infectadas, ¿Cómo podrías
 evitar ser detectado por un IDS/IPS/NGFW?
 
-6. (OPCIONAL) Ahora utiliza cualquiera de las máquinas comprometidas cómo bouncer para navegar por internet de forma anónima.
+7. (OPCIONAL) Ahora utiliza cualquiera de las máquinas comprometidas cómo bouncer para navegar por internet de forma anónima.
 Nota: Este ejercicio es de la semana que viene, si lo haces ahora ahorrarás trabajo en la siguiente práctica.
