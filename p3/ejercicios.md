@@ -139,8 +139,9 @@ detección cero, pero sí reducir mucho el número de detecciones) (tienes que d
 4. Lanza un ataque de tipo browser autopwn sobre alice de la práctica 1. Si no tienes éxito (caso probable)
 puedes utilizar la técnica de sustitución de descargas que vimos en la práctica 1 para forzar la descarga
 de un payload creado con msfvenom.
-
-Nota: No tener éxito es, logré lanzar el ataque, pero la explotación falló porque no había ninguna vulnerabilidad
+Nota: No tener éxito significa: logré lanzar el ataque, pero la explotación falló porque no había ninguna
+vulnerabilidad aplicable. No significa: No fui capaz de configurar y lanzar el ataque. (en todo caso no olvides
+evidenciarlo todo)
 
 6. Si tuvieses que hacer tu propio canal de comunicaciones para controlar máquinas infectadas, ¿Cómo podrías
 evitar ser detectado por un IDS/IPS/NGFW?
