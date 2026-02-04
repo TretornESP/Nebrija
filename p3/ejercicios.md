@@ -7,7 +7,7 @@
 
 2. Conectala con la red del laboratorio de la semana pasada (solo requerido para los ejercicios 2.4 y 2.6)
 
-3. Instalamos metasploit framework en bob:
+3. Instalamos metasploit framework en bob (o si no haces el punto 2, en cualquier máquina atacante):
 
 ```bash
 #Puede hacerse de varias formas, una de ellas es:
