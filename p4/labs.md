@@ -121,6 +121,8 @@ Yo recomiendo crear otro punto de restauración llegado a este punto
 - Systemd unit
 - .bashrc
 
+Nota: En este punto puede ser cualquier payload, desde un comando id hasta una reverse shell.
+
 3. Implementad un rootkit en base al ejemplo de la carpeta rk que haga lo siguiente: (Vale 2 punto)
 
  - Esconda el módulo cuando se haga lsmod (usad el truco del cap 5 para que sys_kill señal 64 lo revele y asi poder descargarlo)
