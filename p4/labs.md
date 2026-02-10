@@ -126,7 +126,7 @@ Nota: En este punto puede ser cualquier payload, desde un comando id hasta una r
 3. Implementad un rootkit en base al ejemplo de la carpeta rk que haga lo siguiente: (Vale 2 punto)
 
  - Esconda el módulo cuando se haga lsmod (usad el truco del cap 5 para que sys_kill señal 64 lo revele y asi poder descargarlo)
- - Cuando se envíe la señal 65, se debe infectar la máquina con un payload mediante uno de los mecanismos del punto 1.
+ - Cuando se envíe la señal 65, se debe infectar la máquina con un payload (este sí debe ser una reverse) mediante uno de los mecanismos del punto anterior.
 
 
 ## Fase 3: Movimiento lateral (2 puntos)
