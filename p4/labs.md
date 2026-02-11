@@ -131,6 +131,6 @@ Nota: En este punto puede ser cualquier payload, desde un comando id hasta una r
 
 ## Fase 3: Movimiento lateral (2 puntos)
 
-1. Usa a Alice como bouncer para comprometer a Marcus mediante un ataque de fuerza bruta con Hydra (usa el user router y el wordlist rockyou).(Equivale al 2.6 de la P3) (Vale 1 punto)
+1. Usa a Alice como bouncer para comprometer a Marcus mediante un ataque de fuerza bruta con Hydra (usa el user de marcus (no hay que bruteforcearlo) y el wordlist rockyou).(Equivale al 2.6 de la P3) (Vale 1 punto)
 
 2. Cambia el mecanismo para hacer tunneling hacia marcus. Ahora haz port bending con la herramienta socat. (Vale 1 punto)
