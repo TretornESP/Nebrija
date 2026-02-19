@@ -107,4 +107,43 @@ Extrae la informacion de la red con SharpHound. Para ello
 
 ## Ejercicio 7: Responder
 
-TO BE CONTINUED...
+Extrae el hash NTLM de un usuario (en teoría el laboratorio genera conexiones cada x minutos, en caso
+de que no apareciesen, podéis generar tráfico autenticándoos con las cuentas (robb.stark y eddard.stark))
+
+Capturad ambos hashes y crackead la clave de robb.
+
+## Ejercicio 8: Relay
+
+Emplead el hash de eddard para realizar un relay con ntlmrelayx y obtener acceso a una máquina de la red.
+¿Que nivel de acceso habéis conseguido?
+
+## Ejercicio 9: Explica con tus palabras los siguientes términos:
+
+- LDAP
+- SMB
+- TGT
+- SPN
+- DCSYNC
+- LLMNR
+- WPAD
+
+### Ahora explica los siguientes ataques (De forma resumida):
+
+- DCSYNC
+- LLMNR poisoning
+- WPAD poisoning
+- NTLM relay
+- Pass the hash
+- Golden ticket
+
+### Ahora explica:
+
+- ¿Cómo podemos protegernos de un ataque de tipo Kerberoasting?
+- ¿Y de un ataque de tipo DCSYNC?
+- ¿Y de un ataque de tipo LLMNR poisoning?
+
+## Ejercicio 10: Dump de credenciales
+
+Emplea una herramienta (La de un kiwi muy educado) y obten los hashes de todas las cuentas que puedas.
+(Puedes ejecutarla con un doble click en la VM directamente, prueba con varias vms si quieres)
+¿Qué herramientas has empleado? ¿Qué cuentas has conseguido? Muestra los resultados obtenidos.
