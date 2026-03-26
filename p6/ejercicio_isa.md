@@ -27,8 +27,7 @@ Todos los entregables se subirán a un repositorio de GitHub. El repositorio deb
 
 Si queréis obtener los puntos extra de esta semana, podéis implementar un programa que haga lo siguiente:
 
-1. Va leyendo de la entrada estándar códigos hexadecimales que representen instrucciones en 
-lenguaje ensamblador SIMPLEZ. El programa irá guardándolos en memoria contigua.
+1. Va leyendo de la entrada estándar códigos hexadecimales que representen instrucciones en lenguaje ensamblador SIMPLEZ. El programa irá guardándolos en memoria contigua.
 
 2. Cuando lea el código hexadecimal que queráis, el prorgama saltará a la dirección de memoria donde se encuentra el primer código hexadecimal leído, ejecutando las instrucciones almacenadas en memoria.
 
