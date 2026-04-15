@@ -1,0 +1,1 @@
+gdb -q --nx --command="debug.gdb" boot
