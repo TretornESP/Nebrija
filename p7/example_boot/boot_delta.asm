@@ -22,7 +22,6 @@ print_string:
 .done:
     ret
 
-
 install_keyboard_interrupt:
     cli
     mov [36], word keyboard_interrupt_handler
