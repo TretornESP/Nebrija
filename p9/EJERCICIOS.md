@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # EJERCICIOS
 
 1. Compila el .c y parchealo con pwninit para que emplee la libc y el cargador dinámico proporcionados. ¿Porqué se hace esto?
@@ -31,22 +30,3 @@ codificando con shikata_ga_nai y evitando los badchars. (Muestra todo el proceso
 
 Entrega una breve clase (15 minutos max) grabada con tus palabras en las que expliques el funcionamiento básico de ROP.
 Esta grabación deberá incluir un apoyo visual y representar correctamente el proceso paso a paso de la ejecución de la misma.
-=======
-# Ejercicio 1. 
-
-Crea un programa en ensamblador para linux de 64 bits que ejecute el comando
-/bin/sh mediante la syscall execve. Despues extrae el shellcode y entrega un fichero
-.c que la ejecute. 
-
-# Ejercicio 2.
-
-Explica que es un stack canary y como se puede saltar esta protección en un servidor de forks.
-
-# Ejercicio 3.
-
-¿Que es el ASLR? ¿Cual es el problema de ASLR en arquitecturas de 32 bits?
-
-# Ejercicio 4.
-
-Edita el exploit que quieras para usar cadenas ciclicas y encontrar el offset de forma semi automatica.
->>>>>>> 9df8361b4f93af02c2831e83b0d1f0750165fdbb
