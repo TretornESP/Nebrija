@@ -57,7 +57,7 @@ Id al fichero example_kernel/src/nebrija.c
 3. La segunda escritura (segundo strcpy) falla. ¿Por qué?
 4. ¿Qué número de interrupción se genera al hacer la segunda escritura? ¿Y si hiciésemos el primer strcpy en la línea 13? ¿Por qué?
 
-## Parte 3:
+## Parte 3 (PUNTOS EXTRA):
 
 Id al fichero example_context/a.c
 
