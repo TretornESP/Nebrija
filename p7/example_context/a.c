@@ -7,6 +7,9 @@ void b();
 
 void kyield() {
     int a[10] = {5, 5, 5, 5, 5, 5, 5, 5, 5, 5};
+    //for (int i = 0; i < 100; i++) {
+    //    printf("a[%d] at %p = %x\n", i, &a[i], a[i]);
+    //}
 
     if (!ready) {
         a11 = a[11];
